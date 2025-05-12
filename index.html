@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent_block">
+        <div class="header">
+            <h1>MY WEATHER</h1>
+            <div class="search_block">
+                <div id="input" class="input_block">
+                    <input type="text" id="city" placeholder="Enter city">
+                </div>
+                <div id="search_wrap">
+                <div id="btn" class="button">Поиск</div>
+                </div>
+            </div>
+            <div class="tabs_block">
+                <div class="tab active" id="today_block">Today</div>
+                <div class="tab" id="forecast_block">5-day forecast</div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="today" class="tab_content active">
+                <div id="today_weather" class="today_weather"></div>
+                <div class="popular_wrap">
+                    <h3>Popular places</h3>
+                    <div class="popular_list" id="popular_places"></div>
+                </div>
+            </div>
+                <div id="forecast" class="tab_content">
+                    <div class="forecast_list" id="forecast_list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
